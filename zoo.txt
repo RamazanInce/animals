@@ -1,0 +1,8 @@
+Camel
+Horse
+Donkey
+Lion
+Elephant
+Tortoise
+Flamingo
+Frog
