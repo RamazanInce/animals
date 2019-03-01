@@ -1,0 +1,4 @@
+dog
+hamster
+sea turtle
+snake
