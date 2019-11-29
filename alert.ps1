@@ -1,9 +1,9 @@
-Foreach ($alert in $sub1_alerts)
+Foreach ($alert in $alerts)
 {
-If ($datetimecheckCriticals -gt $alert.TimeRaised -and [System.String]::IsNullOrEmpty($alert.TicketId) -AND (-not$AllAlertIds.Contains($([string]$alert.Id))))
+If ($datetimecheckCriticals -gt $alert.TimeRaised -and [System.String]::IsNullOrEmpty($alert.TicketId)-AND (-not$AllAlertIds.Contains($([string]$alert.Id))))
 {
 $AllAlertIds+=$([string]$alert.Id)# add to keep track of it.
-write-output "Subscription 1 Alerts"
+write-output "Subscription 3 Alerts"
 Write-Output "alertid<>$([string]$alert.Id)###"
 Write-Output "alertname<>$($alert.Name)###"
 If ([system.string]::IsNullOrEmpty($alert.NetbiosComputerName))
